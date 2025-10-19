@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Banding Pemulihan WhatsApp | Ditverse</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Popup Selamat Datang -->
+  <div id="welcomePopup" class="popup">
+    <div class="popup-content">
+      <h2>SELAMAT DATANG!!</h2>
+      <p>
+        Website ini dirancang oleh <strong>Ditverse</strong> dan digunakan untuk mempermudah
+        membuat teks untuk memulihkan nomor WhatsApp Anda yang terblokir. Jika terjadi
+        masalah, tekan tombol di bawah ini.
+      </p>
+      <a href="https://t.me/CityXlay" target="_blank" class="admin-btn">Hubungi Admin</a>
+      <button id="closePopup" class="close-btn">Lanjutkan</button>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <h1>Formulir Banding Pemulihan WhatsApp</h1>
+    <p class="subtitle">Dibuat oleh Ditverse untuk membantu Anda mengajukan banding dengan mudah.</p>
+  </header>
+
+  <!-- Form -->
+  <main>
+    <div class="form-container">
+      <label for="nomor">Masukkan Nomor WhatsApp Anda:</label>
+      <input type="text" id="nomor" placeholder="+62xxxxxxxxxxx" />
+
+      <label for="jenis">Pilih Jenis Pemblokiran:</label>
+      <select id="jenis">
+        <option value="">-- Pilih Jenis Pemblokiran --</option>
+        <option value="sementara">Pemblokiran Sementara</option>
+        <option value="permanen">Pemblokiran Permanen</option>
+        <option value="spam">Pemblokiran Spam</option>
+      </select>
+
+      <button id="buatTeks">Buat Teks Banding</button>
+
+      <div id="hasil" class="hasil-container hidden">
+        <h3>Teks Banding:</h3>
+        <textarea id="teksBanding" readonly></textarea>
+        <button id="salinTeks">Salin Teks Banding</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Running Promo Text -->
+  <footer>
+    <div class="marquee">
+      <p>
+         Join Murunban Private Pv @CityXlay |  Paid Unban WhatsApp Pv @CityXlay | 
+        Jasa Buat Website Pv @CityXlay 
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+  </html>
